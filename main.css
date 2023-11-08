@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+.tabs {
+    width: 100%;
+}
+
+.tabs__navigation {
+    padding: 20px;
+}
+
+.tabs__navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.tabs__navigation-item-btn.active-tab-btn {
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+}
+.tabs__container {
+    position: relative;
+    min-height: 400px ;
+}
+
+.tabs__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.tabs__content.active-tab-content {
+    opacity: 1;
+    position: static;
+}
